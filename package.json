@@ -17,3 +17,7 @@
   },
   "homepage": "https://github.com/DmitriyM01/frontend-project-44#readme"
   "type": "module"
+  "bin": {
+	  "brain-games": "bin/brain-games.js"
+  }
+}
