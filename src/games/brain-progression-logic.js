@@ -7,7 +7,7 @@ function getQuestionAndAnswer() {
   const startNum = getRandomNumber();
   const step = Math.round(getRandomNumber() / 10);
   const unknownNum = Math.round(getRandomNumber() / 10);
-  const question = [];
+  let question = [];
   let iDontKnow = startNum;
   question[0] = startNum;
   for (let i = 1; i < 11; i += 1) {
@@ -17,6 +17,7 @@ function getQuestionAndAnswer() {
   const answer = question[unknownNum].toString();
 
   question[unknownNum] = '..';
+  question = question.join(' ');
 
   return [question, answer];
 }
